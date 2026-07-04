@@ -1,0 +1,772 @@
+/* ==========================================
+   Google Font & Reset
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Merriweather',serif;
+
+    background:#f4f6f8;
+
+    color:#333;
+
+}
+
+/* ==========================================
+   Navigation
+========================================== */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 70px;
+
+    background:rgba(0,0,0,.75);
+
+    backdrop-filter:blur(10px);
+
+    z-index:999;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+}
+
+.logo{
+
+    color:#39FF14;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin-left:35px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+nav ul li a:hover,
+
+nav ul li a.active{
+
+    color:#39FF14;
+
+}
+
+nav ul li a::after{
+
+    content:"";
+
+    width:0;
+
+    height:3px;
+
+    background:#39FF14;
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover::after,
+
+nav ul li a.active::after{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   Hero Section
+========================================== */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.hero img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.60);
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-text{
+
+    width:50%;
+
+    margin-left:80px;
+
+    color:white;
+
+}
+
+.hero-text h2{
+
+    font-size:62px;
+
+    color:#39FF14;
+
+    margin-bottom:25px;
+
+}
+
+.hero-text p{
+
+    font-size:22px;
+
+    line-height:40px;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+   Button
+========================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:18px 42px;
+
+    background:linear-gradient(135deg,#00b712,#39FF14);
+
+    color:black;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 30px rgba(57,255,20,.5);
+
+}
+
+/* ==========================================
+   About
+========================================== */
+
+.about{
+
+    padding:90px 10%;
+
+    background:#0e0b0b;
+
+    text-align:center;
+
+}
+
+.about-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.about h2{
+
+    color:#0b8f0b;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.about p{
+
+    font-size:20px;
+
+    line-height:35px;
+
+    color:#555;
+
+}
+
+/* ==========================================
+   Features
+========================================== */
+
+.features{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:70px 10%;
+
+    background:#0e0b0b;
+
+    flex-wrap:wrap;
+
+}
+
+.feature{
+
+    width:300px;
+
+    background:#0e0b0b;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 20px rgba(129, 189, 170, 0.12);
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.feature:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.feature h3{
+
+    color:#0b8f0b;
+
+    margin-bottom:18px;
+
+    font-size:28px;
+
+}
+
+.feature p{
+
+    color:#555;
+
+    line-height:30px;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer{
+
+    background:black;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+}
+
+footer h2{
+
+    color:#39FF14;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin-top:8px;
+
+}
+/* ==========================================
+   Prediction Page
+========================================== */
+
+.prediction-page{
+
+    background:url("../images/flood.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    min-height:100vh;
+
+}
+
+.prediction-overlay{
+
+    background:rgba(0,0,0,.72);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:120px 0 70px;
+
+}
+
+.prediction-card{
+
+    width:85%;
+
+    max-width:1100px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:20px;
+
+    padding:50px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+    transition:.35s;
+
+}
+
+.prediction-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.prediction-card h1{
+
+    text-align:center;
+
+    color:#39FF14;
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:20px;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================
+   Form Grid
+========================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.input-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.input-box label{
+
+    color:white;
+
+    font-size:18px;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+.input-box input{
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:2px solid transparent;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.input-box input::placeholder{
+
+    color:#dddddd;
+
+}
+
+.input-box input:focus{
+
+    outline:none;
+
+    border-color:#39FF14;
+
+    background:rgba(255,255,255,.25);
+
+    box-shadow:0 0 18px rgba(57,255,20,.5);
+
+}
+
+/* ==========================================
+   Predict Button
+========================================== */
+
+.predict-btn{
+
+    display:block;
+
+    margin:45px auto 0;
+
+    padding:18px 55px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#00b712,#39FF14);
+
+    color:black;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.predict-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 30px rgba(57,255,20,.5);
+
+}
+
+/* ==========================================
+   Result Card
+========================================== */
+
+.result-card{
+
+    margin-top:40px;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    animation:fadeIn .6s;
+
+}
+
+.result-card h2{
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.result-card h1{
+
+    font-size:40px;
+
+}
+
+/* ==========================================
+   Green Result
+========================================== */
+
+.safe{
+
+    background:rgba(0,180,0,.15);
+
+    border:2px solid #39FF14;
+
+    box-shadow:0 0 20px rgba(57,255,20,.45);
+
+}
+
+.safe h1{
+
+    color:#39FF14;
+
+}
+
+/* ==========================================
+   Red Result
+========================================== */
+
+.danger{
+
+    background:rgba(255,0,0,.18);
+
+    border:2px solid #ff4d4d;
+
+    box-shadow:0 0 20px rgba(255,0,0,.45);
+
+}
+
+.danger h1{
+
+    color:#ff4d4d;
+
+}
+
+/* ==========================================
+   Predict Again Button
+========================================== */
+
+.again-btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:14px 35px;
+
+    background:white;
+
+    color:black;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.again-btn:hover{
+
+    background:#39FF14;
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   Fade Animation
+========================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   Mobile Responsive
+========================================== */
+
+@media(max-width:900px){
+
+    nav{
+
+        padding:15px 25px;
+
+        flex-direction:column;
+
+    }
+
+    .logo{
+
+        margin-bottom:15px;
+
+        font-size:30px;
+
+    }
+
+    nav ul li{
+
+        margin-left:18px;
+
+    }
+
+    .hero-text{
+
+        width:90%;
+
+        margin:auto;
+
+        text-align:center;
+
+    }
+
+    .hero-text h2{
+
+        font-size:40px;
+
+    }
+
+    .hero-text p{
+
+        font-size:18px;
+
+        line-height:32px;
+
+    }
+
+    .prediction-card{
+
+        width:95%;
+
+        padding:30px;
+
+    }
+
+    .prediction-card h1{
+
+        font-size:36px;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .features{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flood Prediction System</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<!-- ================= Navigation ================= -->
+
+<nav>
+
+    <div class="logo">
+
+        Floods Prediction
+
+    </div>
+
+    <ul>
+
+        <li><a href="/" class="active">Home</a></li>
+
+        <li><a href="/predict">Predict Floods</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= Hero Section ================= -->
+
+<section class="hero">
+
+    <img src="{{ url_for('static', filename='images/flood.jpg') }}"
+         alt="Flood Image">
+
+    <div class="overlay">
+
+        <div class="hero-text">
+
+            <h2>Flood Prediction System</h2>
+
+            <p>
+
+                Predict flood occurrence using Machine Learning and
+                historical weather information such as rainfall,
+                humidity, cloud cover and temperature.
+
+            </p>
+
+            <a href="/predict" class="btn">
+
+                Start Prediction
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= About ================= -->
+
+<section class="about">
+
+    <div class="about-container">
+
+        <h2>About the Project</h2>
+
+        <p>
+
+            This Flood Prediction System is built using Flask and
+            Machine Learning. It analyzes weather parameters like
+            rainfall, humidity, cloud cover and temperature to
+            predict whether flooding is likely to occur.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= Features ================= -->
+
+<section class="features">
+
+    <div class="feature">
+
+        <h3>🌧 Weather Analysis</h3>
+
+        <p>
+
+            Uses rainfall, humidity, cloud cover and
+            temperature as prediction features.
+
+        </p>
+
+    </div>
+
+    <div class="feature">
+
+        <h3>🤖 Machine Learning</h3>
+
+        <p>
+
+            Powered by an XGBoost Machine Learning model
+            trained on historical flood data.
+
+        </p>
+
+    </div>
+
+    <div class="feature">
+
+        <h3>⚡ Instant Prediction</h3>
+
+        <p>
+
+            Enter the weather values and get the
+            prediction instantly.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= Footer ================= -->
+
+<footer>
+
+    <h2>Flood Prediction System</h2>
+
+    <p>
+
+        Built using Flask • Python • XGBoost
+
+    </p>
+
+    <p>
+
+        © 2026 All Rights Reserved
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>
