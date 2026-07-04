@@ -1,57 +1,65 @@
-#  Flood Prediction System
+# Flood Prediction System
 
-A Machine Learning based web application that predicts the possibility of floods using historical weather and rainfall data.
-
----
-
-##  Project Overview
-
-Floods are among the most devastating natural disasters. Early prediction can help authorities and citizens take preventive measures.
-
-This project uses Machine Learning to analyze weather parameters and predict whether flooding is likely to occur.
-
-The application is built using **Python**, **Flask**, and **XGBoost** and provides a simple web interface where users can enter weather information and receive an instant prediction.
+A Machine Learning-based web application that predicts the likelihood of floods using historical weather and rainfall data. The application leverages an XGBoost model integrated with a Flask web framework to provide real-time flood predictions through a simple and responsive web interface.
 
 ---
 
-#  Features
+# Project Links
 
-- 🌡 Temperature Prediction Input
-- 💧 Humidity Input
-- ☁ Cloud Cover Input
-- 🌧 Rainfall Analysis
-- 🤖 Machine Learning Prediction
-- ⚡ Instant Results
-- 🎨 Professional Flask Web Interface
-- 📱 Responsive Design
+| Resource | Link |
+|----------|------|
+| **Live Demo** | https://flood-prediction-system-3fv8.onrender.com |
+| **GitHub Repository** | https://github.com/doprajnasai/Rising-Waters |
+
+---
+
+# Project Overview
+
+Floods are among the most devastating natural disasters, causing severe damage to human life, agriculture, and infrastructure. Early prediction enables authorities and communities to take preventive measures and minimize potential losses.
+
+This project analyzes weather and rainfall parameters using Machine Learning to predict whether flooding is likely to occur. The system follows the complete Machine Learning lifecycle, including data preprocessing, model training, evaluation, deployment, and user interaction through a Flask web application.
+
+---
+
+# Features
+
+- Weather parameter input through an intuitive web interface
+- Flood likelihood prediction using Machine Learning
+- Real-time prediction results
+- Input validation for all weather parameters
+- Responsive and user-friendly interface
+- XGBoost-based prediction model
+- Flask backend integration
+- Cloud deployment on Render
 
 ---
 
 # Machine Learning
 
-The following Machine Learning algorithms were implemented and compared:
+The following Machine Learning algorithms were trained and evaluated:
 
 - Decision Tree
 - Random Forest
 - K-Nearest Neighbors (KNN)
-- XGBoost (Best Performing Model)
+- XGBoost
 
-The final deployed model is **XGBoost**.
+After performance evaluation, **XGBoost** was selected as the final deployed model because it achieved the best prediction accuracy.
 
 ---
 
-# Technologies Used
+# Technology Stack
 
-- Python
-- Flask
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- Joblib
-- HTML
-- CSS
-- JavaScript (Basic)
+| Layer | Technologies |
+|-------|--------------|
+| Programming Language | Python |
+| Web Framework | Flask |
+| Machine Learning | XGBoost, Scikit-learn |
+| Data Processing | Pandas, NumPy |
+| Model Storage | Joblib |
+| Frontend | HTML5, CSS3, Jinja2 |
+| Development Tools | Jupyter Notebook, VS Code |
+| Version Control | Git, GitHub |
+| Deployment | Render |
 
 ---
 
@@ -61,60 +69,87 @@ The final deployed model is **XGBoost**.
 Flood-Prediction-System/
 │
 ├── app.py
+├── Procfile
 ├── requirements.txt
 ├── README.md
+├── .gitignore
+│
 ├── dataset/
+│   └── flood_dataset.xlsx
+│
 ├── notebooks/
+│   └── Flood_Prediction.ipynb
+│
 ├── saved_models/
+│   ├── flood_model.joblib
+│   └── scaler.joblib
+│
 ├── static/
 │   ├── css/
+│   │   └── style.css
 │   └── images/
-└── templates/
+│       └── flood.jpg
+│
+├── templates/
+│   ├── index.html
+│   └── predict.html
+│
+└── screenshots/
+    ├── home.png
+    ├── predict.png
+    ├── flood.png
+    └── noflood.png
 ```
 
 ---
 
-# ⚙ Installation
+# Installation
 
-Clone the repository
+## Clone the Repository
 
 ```bash
-git clone <repository-link>
+git clone https://github.com/doprajnasai/Flood-Prediction-System.git
 ```
 
-Move into the project folder
+## Navigate to the Project Directory
 
 ```bash
 cd Flood-Prediction-System
 ```
 
-Create a virtual environment
+## Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate the virtual environment
+## Activate the Virtual Environment
 
-Windows
+### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-Install required libraries
+### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the Flask application
+## Run the Application
 
 ```bash
 python app.py
 ```
 
-Open the browser
+## Open in Browser
 
 ```text
 http://127.0.0.1:5000
@@ -124,7 +159,7 @@ http://127.0.0.1:5000
 
 # Input Features
 
-The model uses the following 10 features:
+The prediction model uses the following weather parameters:
 
 1. Temperature
 2. Humidity
@@ -141,37 +176,66 @@ The model uses the following 10 features:
 
 # Prediction Output
 
-The application predicts one of the following:
+The system predicts one of the following outcomes:
 
 - Flood Likely
 - No Flood Likely
 
 ---
 
+# Screenshots
+
+Add screenshots of the application here.
+
+### Home Page
+
+> `screenshots/home.png`
+
+### Prediction Page
+
+> `screenshots/predict.png`
+
+### Flood Prediction
+
+> `screenshots/flood.png`
+
+### No Flood Prediction
+
+> `screenshots/noflood.png`
+
+---
 
 # Future Improvements
 
 - Live Weather API Integration
-- Interactive Maps
-- Rainfall Visualization
-- Location-based Prediction
-- Deep Learning Models
+- Location-Based Flood Prediction
+- Interactive GIS Flood Maps
+- Rainfall Trend Visualization
 - Mobile Application
+- Deep Learning-Based Prediction Models
+- Email and SMS Alert System
 
 ---
 
-# License
+# Deployment
 
-This project is developed for educational purposes.
+The application is deployed on **Render** and is publicly accessible.
+
+**Live Application**
+
+https://flood-prediction-system-3fv8.onrender.com
 
 ---
 
 # Authors
 
-Doprajna Sai Vadlamudi
+- Doprajna Sai Vadlamudi
+- Madugundu Surendra
+- Debosmita Mukhopadhyay
+- Vedha Sri Tallam
 
-Madugundu Surendra
+---
 
-Debosmita Mukhopadhyay
+# License
 
-Vedha Sri Tallam
+This project is developed for educational and academic purposes.
