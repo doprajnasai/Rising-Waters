@@ -91,14 +91,8 @@ Flood-Prediction-System/
 │       └── flood.jpg
 │
 ├── templates/
-│   ├── index.html
-│   └── predict.html
-│
-└── screenshots/
-    ├── home.png
-    ├── predict.png
-    ├── flood.png
-    └── noflood.png
+    ├── index.html
+    └── predict.html
 ```
 
 ---
@@ -180,28 +174,6 @@ The system predicts one of the following outcomes:
 
 - Flood Likely
 - No Flood Likely
-
----
-
-# Screenshots
-
-Add screenshots of the application here.
-
-### Home Page
-
-> `screenshots/home.png`
-
-### Prediction Page
-
-> `screenshots/predict.png`
-
-### Flood Prediction
-
-> `screenshots/flood.png`
-
-### No Flood Prediction
-
-> `screenshots/noflood.png`
 
 ---
 
