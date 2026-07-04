@@ -1,4 +1,4 @@
-# 🌊 Flood Prediction System
+#  Flood Prediction System
 
 A Machine Learning based web application that predicts the possibility of floods using historical weather and rainfall data.
 
@@ -179,6 +179,9 @@ This project is developed for educational purposes.
 # Authors
 
 Doprajna Sai Vadlamudi
+
 Madugundu Surendra
+
 Debosmita Mukhopadhyay
+
 Vedha Sri Tallam
